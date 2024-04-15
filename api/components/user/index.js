@@ -1,4 +1,4 @@
-const controller = require("./controller");
-const store = require("../../../store/dummy");
+import store from "../../../store/dummy.js";
+import createUserServices from "./userServices.js";
 
-module.exports = controller(store);
+export default createUserServices(store);
