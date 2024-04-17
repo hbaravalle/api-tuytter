@@ -1,7 +1,7 @@
 import userServices from "./index.js";
 import response from "../../../network/response.js";
 
-async function list(req, res) {
+async function getAll(req, res) {
   try {
     const list = await userServices.list();
     response.success(req, res, list, 200);
@@ -29,7 +29,21 @@ async function create(req, res) {
 }
 
 async function update(req, res) {
-  return true;
+  try {
+    const newUser = await userServices.upsert(req.body);
+    response.success(req, res, newUser, 201);
+  } catch (error) {
+    response.error(req, res, error.message, 500);
+  }
 }
 
-export default { list, get, create, update };
+async function destroy(req, res) {
+  try {
+    await userServices.destroy(req.params.id);
+    response.success(req, res, "User deleted", 200);
+  } catch (error) {
+    response.error(req, res, error.message, 500);
+  }
+}
+
+export default { getAll, get, create, update, destroy };

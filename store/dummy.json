@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "XlMG1A-_bXMX6CsElnLoE",
+      "firstname": "Leia",
+      "lastname": "Organa",
+      "username": "lorgana",
+      "email": "leia@starwars.com"
+    },
+    {
+      "id": "XlMG1A-_bXMX6CsElnLoE2",
+      "firstname": "Luke",
+      "lastname": "Skywalker",
+      "username": "imluke_ok",
+      "email": "luke@starwars.com"
+    },
+    {
+      "id": "XlMG1A-_bXMX6CsElnLoE3",
+      "firstname": "Han",
+      "lastname": "Solo",
+      "username": "milleniumfalcon2024",
+      "email": "han@starwars.com"
+    }
+  ]
+}

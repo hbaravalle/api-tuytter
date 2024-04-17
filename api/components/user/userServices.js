@@ -15,24 +15,28 @@ export default function (injectedStore) {
     return store.get(TABLE, id);
   }
 
-  async function upsert(body) {
+  async function upsert(data) {
     const user = {
-      id: body.id || nanoid(),
-      firstname: body.firstname,
-      lastname: body.lastname,
-      username: body.username,
-      email: body.email,
+      id: data.id || nanoid(),
+      firstname: data.firstname,
+      lastname: data.lastname,
+      username: data.username,
+      email: data.email,
     };
-    if (body.password || body.username) {
-      await auth.upsert({ ...user, password: body.password });
+    if (data.password || data.username) {
+      await auth.upsert({ ...user, password: data.password });
     }
-
     return store.upsert(TABLE, user);
+  }
+
+  async function destroy(id) {
+    return store.destroy(TABLE, id);
   }
 
   return {
     list,
     get,
     upsert,
+    destroy,
   };
 }
