@@ -1,5 +1,30 @@
 import { nanoid } from "nanoid";
-import db from "./dummy.json" assert { type: "json" };
+
+const db = {
+  users: [
+    {
+      id: "XlMG1A-_bXMX6CsElnLoE",
+      firstname: "Leia",
+      lastname: "Organa",
+      username: "lorgana",
+      email: "leia@starwars.com",
+    },
+    {
+      id: "XlMG1A-_bXMX6CsElnLoE2",
+      firstname: "Luke",
+      lastname: "Skywalker",
+      username: "imluke_ok",
+      email: "luke@starwars.com",
+    },
+    {
+      id: "XlMG1A-_bXMX6CsElnLoE3",
+      firstname: "Han",
+      lastname: "Solo",
+      username: "milleniumfalcon2024",
+      email: "han@starwars.com",
+    },
+  ],
+};
 
 async function list(table) {
   return db[table];
@@ -22,3 +47,4 @@ async function destroy(table, id) {
 }
 
 export default { list, get, upsert, destroy };
+export { db };
