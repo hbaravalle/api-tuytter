@@ -1,4 +1,4 @@
-import app from "../api/app";
+import app from "../src/api/index.js";
 import request from "supertest";
 
 const sendPostRequest = async (url, data = {}) => {
