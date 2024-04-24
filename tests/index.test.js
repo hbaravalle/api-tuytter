@@ -9,7 +9,7 @@ const sendGetRequest = async (url, data = {}) => {
   return await request(app).get(url).send();
 };
 
-describe("GET /api/users", () => {
+describe("🔹 GET /api/users", () => {
   it("Should response with a 200 status code", async () => {
     const response = await sendGetRequest("/api/users");
     expect(response.statusCode).toBe(200);
@@ -28,7 +28,7 @@ describe("GET /api/users", () => {
   });
 });
 
-describe("POST /users", () => {
+describe("🔹 POST /api/users", () => {
   const newUser = {
     firstname: "Obi-wan",
     lastname: "Kenobi",
