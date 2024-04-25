@@ -5,6 +5,13 @@
 # X API - Backend
 En el [Bootcamp de Desarrollo Web de Hack Academy](https://ha.dev/cursos/bootcamp-desarrollo-web), este proyecto forma parte del desafío principal del Sprint 3 que abarca todos los conocimientos que les acercamos en relación a la capa de Back-end. En este trabajan en el armado de una API de una versión simplificada de X (antes Twitter) Node.js, Express, MongoDB, entre otras tecnologías.
 
+## ⚡ Funcionalidades
+
+- Registro y autenticación de usuarios.
+- Publicación y visualización de tweets.
+- Seguimiento de otros usuarios y recepción de notificaciones.
+- Búsqueda y filtrado de tweets por hashtags y usuarios.
+
 ## ⚙ Configuración local
 ```bash
 # 1. Clonar el repositorio
@@ -29,13 +36,6 @@ npm install
 - `middlewares/`: Middlewares para la validación y autenticación.
 - `tests/`: Pruebas automatizadas para garantizar la calidad del código.
 - `package.json`: Archivo de configuración de npm con las dependencias y scripts necesarios.
-
-## ⚡ Funcionalidades
-
-- Registro y autenticación de usuarios.
-- Publicación y visualización de tweets.
-- Seguimiento de otros usuarios y recepción de notificaciones.
-- Búsqueda y filtrado de tweets por hashtags y usuarios.
   
 ## 🧪 Tecnologías Utilizadas
 
