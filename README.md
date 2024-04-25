@@ -2,7 +2,7 @@
 
 > ⚠🚧 *¡Documento en construcción!* 🚧⚠
 
-# X API - Backend
+# API X Twitter - Backend
 En el [Bootcamp de Desarrollo Web de Hack Academy](https://ha.dev/cursos/bootcamp-desarrollo-web), este proyecto forma parte del desafío principal del Sprint 3 que abarca todos los conocimientos que les acercamos en relación a la capa de Back-end. En este trabajan en el armado de una API de una versión simplificada de X (antes Twitter) Node.js, Express, MongoDB, entre otras tecnologías.
 
 ## ⚡ Funcionalidades
