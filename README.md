@@ -28,14 +28,14 @@ npm install
 
 ## 🗃 Estructura del Proyecto
 
-- `src/`: Contiene los archivos fuente de la API.
-- `config/`: Configuraciones del proyecto, como las variables de entorno.
-- `models/`: Modelos de datos de la aplicación.
-- `routes/`: Rutas de la API.
-- `controllers/`: Controladores que manejan las solicitudes HTTP.
-- `middlewares/`: Middlewares para la validación y autenticación.
-- `tests/`: Pruebas automatizadas para garantizar la calidad del código.
-- `package.json`: Archivo de configuración de npm con las dependencias y scripts necesarios.
+- `src/` Contiene los archivos fuente de la API.
+- `config/` Configuraciones del proyecto, como las variables de entorno.
+- `models/` Modelos de datos de la aplicación.
+- `routes/` Rutas de la API.
+- `controllers/` Controladores que manejan las solicitudes HTTP.
+- `middlewares/` Middlewares para la validación y autenticación.
+- `tests/` Pruebas automatizadas para garantizar la calidad del código.
+- `package.json` Archivo de configuración de npm con las dependencias y scripts necesarios.
   
 ## 🧪 Tecnologías Utilizadas
 
